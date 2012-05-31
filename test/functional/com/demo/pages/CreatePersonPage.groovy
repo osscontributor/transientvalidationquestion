@@ -4,9 +4,7 @@ class CreatePersonPage extends geb.Page {
     static url = 'person/create'
 
     static content = {
-        firstNameField { $('input', id: 'firstName') }
-        lastNameField { $('input', id: 'lastName') }
-        titleField { $('input', id: 'title') }
+        createPersonForm { $('form') }
         createPersonButton { $('input', id: 'create') }
     }
 

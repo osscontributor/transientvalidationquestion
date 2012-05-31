@@ -28,9 +28,9 @@ class PersonControllerSpec extends geb.spock.GebReportingSpec {
         at CreatePersonPage
 
         when:
-        firstNameField.value('Jeff')
-        lastNameField.value('Brown')
-        titleField.value('Engineer')
+        createPersonForm.firstName = 'Jeff'
+        createPersonForm.lastName = 'Brown'
+        createPersonForm.title = 'Engineer'
         createPersonButton.click()
 
         then:
