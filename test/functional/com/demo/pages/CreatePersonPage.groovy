@@ -5,7 +5,6 @@ class CreatePersonPage extends geb.Page {
 
     static content = {
         createPersonForm { $('form') }
-        createPersonButton { $('input', id: 'create') }
     }
 
     static at = {

@@ -10,7 +10,7 @@ class PersonControllerSpec extends geb.spock.GebReportingSpec {
 
         then:
         at CreatePersonPage
-        createPersonButton.click()
+        createPersonForm.create().click()
 
         then:
         at CreatePersonPage
@@ -31,7 +31,7 @@ class PersonControllerSpec extends geb.spock.GebReportingSpec {
         createPersonForm.firstName = 'Jeff'
         createPersonForm.lastName = 'Brown'
         createPersonForm.title = 'Engineer'
-        createPersonButton.click()
+        createPersonForm.create().click()
 
         then:
         at ShowPersonPage
